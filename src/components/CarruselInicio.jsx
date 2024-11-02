@@ -1,6 +1,6 @@
 import bannerInicio from '../../public/bannerInicio.avif'
 
-const BannerCentral=()=>{
+const CarruselInicio=()=>{
     return(
         <div >
         <img src="/bannerInicio.avif" className='bannerCentral'alt="banner" />
@@ -8,4 +8,4 @@ const BannerCentral=()=>{
     )
 }
 
-export default BannerCentral
+export default CarruselInicio
