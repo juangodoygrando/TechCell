@@ -1,19 +1,94 @@
-*{
-    font-family: "Raleway", sans-serif;
-    background-color: #2f4a64 ;
+* {
+  font-family: "Raleway", sans-serif;
+  margin: 0; /* Elimina márgenes predeterminados */
+  padding: 0;
+  
 }
-.styleNavBar{
-     color: aqua;
+
+
+.app {
+  display: flex;
+  flex-direction: column; /* Apila los hijos en columna */
+  min-height: 100vh;      /* Asegura que el contenedor abarque toda la ventana */
+  background-color: rgb(131, 119, 108)
 }
-.bsBag{
-    background-color:#ffc107 ;
+
+/* Contenedor del contenido dinámico */
+.content {
+  flex: 1;                /* Hace que este bloque crezca para ocupar el espacio sobrante */
+  padding: 20px;          /* Añade algo de espacio alrededor */
 }
-.titulosPrincipales{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    color: black;
+.footer {
+  width: 100%;
+  padding:5px;
+  text-align: center;
+  line-height: 10px;
 }
-.bannerCentral{
-    width: 100%;
+
+.styleNavBar {
+  font-size: x-large;
+}
+
+.bsBag {
+  background-color: #ffc107;
+}
+.titulosPrincipales {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: black;
+}
+.logoNavBar {
+  min-width: 300px;
+}
+.itemDetail{
+  display: flex;                /* Habilitar Flexbox */
+  flex-direction: column;       /* Organizar elementos en columna */
+  align-items: center;          /* Centrar elementos horizontalmente */
+  justify-content: center;
+}
+.itemCount{
+  display: flex;                /* Habilitar Flexbox */
+  flex-direction: column;       /* Organizar elementos en columna */
+  align-items: center;          /* Centrar elementos horizontalmente */
+  justify-content: center;      /* Centrar elementos verticalmente */
+  border: 2px solid #000;       /* Añadir un borde al contenedor principal */
+  padding: 20px;                /* Espaciado interno */
+  max-width: 400px;             /* Ancho máximo */
+  margin: 25px;               /* Centrar el contenedor en la página */
+  border-radius: 10px; 
+  width: 80% ;        /* Bordes redondeados */
+}
+.btnSumaResta{
+  display: flex;                /* Habilitar Flexbox */
+  justify-content: space-between; /* Espaciar elementos horizontalmente */
+  align-items: center;          /* Alinear verticalmente */
+  width: 100%;                  /* Que ocupe todo el ancho del contenedor principal */
+  margin-bottom: 20px;          /* Espaciado inferior */
+}
+.btnResta,
+.btnSuma {
+  flex: 1;    
+  max-width: 100px;             /* Limitar el ancho máximo */
+  margin: 0 5px;
+  font-size: 1.8rem !important;
+  
+  
+}
+
+/* Estilo del span (contador) */
+.count {
+  flex: 1;                      /* Ocupar espacio central */
+  text-align: center;           /* Centrar texto */
+  font-size: 1.6rem;            /* Tamaño del texto */
+  font-weight:500;            /* Negrita */
+}
+
+/* Botón 'Añadir a la cesta' */
+.btnAñadirCesta {
+  margin-top: 5px;             /* Espaciado superior */
+  padding: 10px 20px;           /* Relleno interno */
+  font-size: 1.3rem !important; 
+  width: 95%;             /* Tamaño del texto */
+  border-radius: 5px;           /* Bordes redondeados */
 }
