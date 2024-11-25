@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { getProducts } from "../mock/data";
 import ItemList from "./ItemList";
 import { useParams } from "react-router-dom";
+import Loader from "./Loader";
 
 const ItemListConteiner = ({ greeting, titleTwo }) => {
   const [products, setProducts] = useState([]);
@@ -30,7 +31,7 @@ const ItemListConteiner = ({ greeting, titleTwo }) => {
       <h3>{titleTwo}</h3>
 
       
-      {loading ? (<p>Cargando...</p>) :<ItemList products={products}/>}    
+      {loading ? <Loader/> : <ItemList products={products}/>}
       
       
     </div>

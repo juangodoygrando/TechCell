@@ -27,7 +27,7 @@ function NavBarApp() {
           </NavDropdown>
           
           <Nav.Link to='*' as={NavLink}>Vende tu tech!</Nav.Link>
-          <Nav.Link to='/product/Ofertas' as={NavLink} className="text-warning">Ofertas</Nav.Link>
+          <Nav.Link to='/product/Ofertas' as={NavLink} className="text-danger">Ofertas</Nav.Link>
           
           
           </Nav>

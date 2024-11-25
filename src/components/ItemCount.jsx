@@ -14,7 +14,7 @@ const ItemCount = ({stock, onAdd}) => {
             setCount(count-1)
         }
     }
-
+    
     const onAddNumber=()=>{
         onAdd(count);
     }
@@ -24,11 +24,11 @@ const ItemCount = ({stock, onAdd}) => {
     
     <div className='itemCount'>
     <div className='btnSumaResta'>
-        <Button variant="outline-dark" className='btnResta' onClick={restar}>-</Button>
+        <Button  className='btnResta' onClick={restar}>-</Button>
         <span className="count">{count}</span>
-        <Button variant="outline-dark"className='btnSuma' onClick={sumar}>+</Button>
+        <Button className='btnSuma' onClick={sumar}>+</Button>
     </div>
-    <Button variant="warning" className='btnAñadirCesta'onClick={onAddNumber} disabled={count === 0}>Añadir a la cesta</Button>
+    <Button  className='btnAñadirCesta'onClick={onAddNumber} disabled={count === 0}>Añadir a la cesta</Button>
     </div>
   )
 }
