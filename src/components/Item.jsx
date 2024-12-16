@@ -4,20 +4,22 @@ import { Link } from "react-router-dom";
 
 const Item = ({ product }) => {
   return (
-    <div className="" style={{ width: "18rem", marginTop: 10 }}>
-      <Card>
-        <Card.Img variant="top" src={product.imagen} />
+    <div className="card-container">
+      <Card className="card-uniform">
+        <Card.Img
+          variant="top"
+          src={product.imagen}
+          className="card-img-uniform"
+        />
         <Card.Body>
           <Card.Title>{product.nombre}</Card.Title>
-
           <Card.Title>€{product.precio}</Card.Title>
           <Button
             to={`/item/${product.id}`}
             as={Link}
-            variant="secondary"
-            size=" "
+            className="btnMasDetalles border-3"
           >
-            Mas detalles
+            Más detalles
           </Button>
         </Card.Body>
       </Card>

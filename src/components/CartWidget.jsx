@@ -1,22 +1,22 @@
 import { BsBag } from "react-icons/bs";
-import Badge from 'react-bootstrap/Badge';
-import Button from 'react-bootstrap/Button';
+import Badge from "react-bootstrap/Badge";
+import Button from "react-bootstrap/Button";
 import { useContext } from "react";
-import { useCart } from "../context/CartContext";
+import { useCart, CartContext } from "../context/CartContext";
 
+const CartWidget = () => {
+  const { cartQuantity } = useCart();
 
-const CartWidget=({harcodeado})=>{
+  return (
+    <div>
+      <Button className="carrito">
+        <BsBag className="bsBag" fontSize={"2.2rem"} />
+        {cartQuantity() > 0 && (
+          <Badge className="badge ">{cartQuantity()}</Badge>
+        )}
+      </Button>
+    </div>
+  );
+};
 
- const {cart}=useCart
-
-    return(
-        <div >
-          <Button className= "carrito">
-            <BsBag className="bsBag"fontSize={'1.8rem'} color='black'/> 
-            <Badge className="badge bg-primary  fs-6 mt-1" bg="danger" text="dark">{harcodeado}</Badge>
-          </Button>
-        </div>
-    )
-}
-
-export default CartWidget
+export default CartWidget;

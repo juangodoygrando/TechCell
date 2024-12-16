@@ -7,6 +7,10 @@ import Footer from "./components/Footer"
 import Error from "./components/Error";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { CartProvider } from "./context/CartContext";
+import VendeTuTech from "./components/VendeTuTech";
+import CartView from "./components/CartView";
+import Cheackout from "./components/Cheackout";
+
 
 function App() {
   return (
@@ -22,7 +26,11 @@ function App() {
       />}/>
       <Route path="/item/:id" element={<ItemDetailConteiner />}/>
       <Route path="/product/:category" element={<ItemListConteiner
-        greeting="Estos son nuestros moviles"/>}/>
+        greeting="Estos son nuestros moviles" />}/>
+      <Route path="/vende-tu-tech" element={<VendeTuTech/>} />
+      <Route path="/cart" element={<CartView/>} />
+      <Route path="/checkout" element={<Cheackout/>} />
+
       <Route path="*" element={<Error />}/>
       
       </Routes>

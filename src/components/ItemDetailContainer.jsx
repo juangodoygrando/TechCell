@@ -1,23 +1,38 @@
-import React, { useEffect, useState } from 'react'
-import { getProducts} from '../mock/data'
-import ItemDetail from './ItemDetail'
-import { useParams } from 'react-router-dom'
+import React, { useEffect, useState } from "react";
+import ItemDetail from "./ItemDetail";
+import { useParams } from "react-router-dom";
+import SpinnerLoader from "./SpinnerLoader";
+import { collection, doc, getDoc } from "firebase/firestore";
+import { db } from "../services/firebase";
+
 
 const ItemDetailContainer = () => {
-    const [producto, setProducto]=useState({})
-    const {id}= useParams()
-    
-     useEffect(()=>{
-      getProducts(id)
-      .then((res)=> setProducto(res.find((item)=> item.id == id)))
-      .catch((error)=>console.log(error))
-     },[])
-    
+  const [loading, setLoading] = useState(false);
+  const [producto, setProducto] = useState({});
+  const { id } = useParams();
+
+
+  useEffect(() => {
+    setLoading(true)
+
+    const collectionProducts = collection(db,"productos")
+
+    const docRef= doc(collectionProducts,id)
+
+    getDoc(docRef)
+    .then((resp)=> setProducto({id: resp.id, ...resp.data()}))
+    .catch((error) => console.log(error))
+    .finally(() => setLoading(false))
+
+
+  },[])
+  
   return (
     <div>
-        <ItemDetail producto={producto}/>
+      {loading  ? <SpinnerLoader/> : <ItemDetail producto={producto} />
+      }
     </div>
-  )
-}
+  );
+};
 
-export default ItemDetailContainer
+export default ItemDetailContainer;

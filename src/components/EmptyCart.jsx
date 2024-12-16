@@ -1,8 +1,8 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
 import { Button } from "react-bootstrap";
+import { NavLink } from "react-router-dom";
 
-const Error = () => {
+const EmptyCart = () => {
   return (
     <div
       style={{
@@ -13,13 +13,8 @@ const Error = () => {
       }}
     >
       <img
-        src="https://i.postimg.cc/prqtnbK4/MOVI-Pin-de-Pinterest.png"
-        alt="Error 404"
-        style={{
-          width: "80%",
-          maxHeight: "700px",
-          objectFit: "contain",
-        }}
+        src="https://i.postimg.cc/rwLwXcQC/MOVI-A2-horizontal-4.png"
+        alt="Vende tu tech"
       />
       <Button
         to="/"
@@ -32,10 +27,10 @@ const Error = () => {
           fontWeight: "bold",
         }}
       >
-        Volver al inicio
+        Ir a comprar
       </Button>
     </div>
   );
 };
 
-export default Error;
+export default EmptyCart;
