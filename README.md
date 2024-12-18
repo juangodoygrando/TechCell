@@ -28,6 +28,18 @@
    - La aplicación está optimizada para **dispositivos móviles, tabletas y escritorios**.
 
 
+## 🚀 **Demo en Vivo**
+
+Puedes ver el proyecto funcionando aquí:  
+
+<div align="center">
+  <a href="https://movix-react-js-nu.vercel.app/">
+    <img src="https://img.shields.io/badge/Movix-FF0000?style=for-the-badge&logo=vercel&logoColor=white" alt="Movix">
+  </a>
+</div>
+
+
+
 ## 🖼️ **Galería de Imágenes del Proyecto**
 
 Aquí puedes ver algunas capturas de pantalla de la aplicación:

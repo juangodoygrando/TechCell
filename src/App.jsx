@@ -9,7 +9,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { CartProvider } from "./context/CartContext";
 import VendeTuTech from "./components/VendeTuTech";
 import CartView from "./components/CartView";
-import Cheackout from "./components/Cheackout";
+import Checkout from "./components/Checkout";
 
 
 function App() {
@@ -29,7 +29,7 @@ function App() {
         greeting="Estos son nuestros moviles" />}/>
       <Route path="/vende-tu-tech" element={<VendeTuTech/>} />
       <Route path="/cart" element={<CartView/>} />
-      <Route path="/checkout" element={<Cheackout/>} />
+      <Route path="/checkout" element={<Checkout/>} />
 
       <Route path="*" element={<Error />}/>
       

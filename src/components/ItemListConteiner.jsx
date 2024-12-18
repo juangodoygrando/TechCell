@@ -5,7 +5,7 @@ import SpinnerLoader from "./SpinnerLoader";
 import { addDoc, collection, getDocs, query, where } from "firebase/firestore";
 import { db } from "../services/firebase";
 
-const ItemListConteiner = ({ greeting, titleTwo, loader }) => {
+const ItemListConteiner = ({ greeting, titleTwo }) => {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(false);
   const { category } = useParams();

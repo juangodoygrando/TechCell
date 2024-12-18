@@ -1,8 +1,15 @@
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext, useEffect, useState } from "react";
 export const CartContext = createContext();
 
+const fromlocalStorage =
+  JSON.parse(localStorage.getItem("carritoPersistente")) || [];
+
 export const CartProvider = ({ children }) => {
-  const [cart, setCart] = useState([]);
+  const [cart, setCart] = useState(fromlocalStorage);
+
+  useEffect(() => {
+    localStorage.setItem("carritoPersistente", JSON.stringify(cart));
+  }, [cart]);
 
   const addToCart = (item, quantity) => {
     if (isInCart(item.id)) {
@@ -38,16 +45,14 @@ export const CartProvider = ({ children }) => {
     return cart.reduce((acc, prod) => (acc += prod.precio * prod.cantidad), 0);
   };
 
- const stockEnCarrito =(id)=>{
-   const itemEnCarrito =cart.find((prod)=> prod.id===id)
-   if(itemEnCarrito){
-    return itemEnCarrito.cantidad
-   }else{
-    return 0
-   }
- }
-
-
+  const stockEnCarrito = (id) => {
+    const itemEnCarrito = cart.find((prod) => prod.id === id);
+    if (itemEnCarrito) {
+      return itemEnCarrito.cantidad;
+    } else {
+      return 0;
+    }
+  };
 
   return (
     <CartContext.Provider
@@ -59,7 +64,7 @@ export const CartProvider = ({ children }) => {
         removeItem,
         cartQuantity,
         totalCarrito,
-        stockEnCarrito
+        stockEnCarrito,
       }}
     >
       {children}

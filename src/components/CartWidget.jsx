@@ -1,8 +1,7 @@
 import { BsBag } from "react-icons/bs";
 import Badge from "react-bootstrap/Badge";
 import Button from "react-bootstrap/Button";
-import { useContext } from "react";
-import { useCart, CartContext } from "../context/CartContext";
+import { useCart } from "../context/CartContext";
 
 const CartWidget = () => {
   const { cartQuantity } = useCart();
