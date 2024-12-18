@@ -81,7 +81,6 @@ Sigue estos pasos para ejecutar el proyecto en tu máquina local:
 1. **Clona el Repositorio**
    ```bash
    git clone https://github.com/juangodoygrando/Movix-react-Js
-   cd movix-ecommerce
    ```
 
 2. **Instala las Dependencias**
