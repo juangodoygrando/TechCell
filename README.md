@@ -46,7 +46,7 @@ Aquí puedes ver algunas capturas de pantalla de la aplicación:
 
 [![Captura-de-pantalla-2024-12-16-185400.png](https://i.postimg.cc/132fmMyN/Captura-de-pantalla-2024-12-16-185400.png)](https://postimg.cc/qNckQshk)
 [![Captura-de-pantalla-2024-12-16-185502.png](https://i.postimg.cc/c4Dvj0jh/Captura-de-pantalla-2024-12-16-185502.png)](https://postimg.cc/56C9QdfQ)
-[![Captura-de-pantalla-2024-12-16-185536.png](https://i.postimg.cc/4xmYRjRg/Captura-de-pantalla-2024-12-16-185536.png)](https://postimg.cc/QFZ8p4M4)
+[![Captura-de-pantalla-2024-12-18-055429.png](https://i.postimg.cc/VNJzGrrB/Captura-de-pantalla-2024-12-18-055429.png)](https://postimg.cc/jWrVCjhL)
 
 ## 🛠️ **Tecnologías Utilizadas**
 
@@ -57,6 +57,10 @@ Aquí puedes ver algunas capturas de pantalla de la aplicación:
   - [Bootstrap](https://getbootstrap.com/)  
   - [MDB React UI Kit](https://mdbootstrap.com/docs/b5/react/)  
   - [React Icons](https://react-icons.github.io/react-icons/)  
+  - [FontAwesome Free](https://fontawesome.com/)  
+  - [React Hook Form](https://react-hook-form.com/) (para formularios)  
+  - [SweetAlert2](https://sweetalert2.github.io/) (para modales de alerta)  
+  - [Firebase](https://firebase.google.com/) (para backend)  
   - [CSS](https://developer.mozilla.org/es/docs/Web/CSS)  
 
 - **Base de Datos**  
