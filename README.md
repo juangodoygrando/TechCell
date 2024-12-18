@@ -53,14 +53,14 @@ Aquí puedes ver algunas capturas de pantalla de la aplicación:
 - **Frontend**  
   - [React.js](https://react.dev/)  
   - [React Router DOM](https://reactrouter.com/en/main)  
-  - [React Spinners](https://www.npmjs.com/package/react-spinners) (para loaders)  
+  - [React Spinners](https://www.npmjs.com/package/react-spinners) 
   - [Bootstrap](https://getbootstrap.com/)  
   - [MDB React UI Kit](https://mdbootstrap.com/docs/b5/react/)  
   - [React Icons](https://react-icons.github.io/react-icons/)  
   - [FontAwesome Free](https://fontawesome.com/)  
-  - [React Hook Form](https://react-hook-form.com/) (para formularios)  
-  - [SweetAlert2](https://sweetalert2.github.io/) (para modales de alerta)  
-  - [Firebase](https://firebase.google.com/) (para backend)  
+  - [React Hook Form](https://react-hook-form.com/) 
+  - [SweetAlert2](https://sweetalert2.github.io/) 
+  - [Firebase](https://firebase.google.com/)  
   - [CSS](https://developer.mozilla.org/es/docs/Web/CSS)  
 
 - **Base de Datos**  
@@ -98,6 +98,6 @@ Sigue estos pasos para ejecutar el proyecto en tu máquina local:
 
 - **Nombre:** Juan Ignacio Godoy Grando  
 - **Curso:** React.js - CoderHouse  
-- **GitHub:** [juangodoygrando](https://github.com/juangodoygrando)  
-- **LinkedIn:** [Tu Perfil de LinkedIn](www.linkedin.com/in/juanignacio-godoygrando)  
-- **Email:** [juangodoygrando@gmail.com](mailto:juangodoygrando@gmail.com)
+- [![GitHub](https://img.shields.io/badge/GitHub-black?logo=github&style=flat-square)](https://github.com/juangodoygrando)  
+- [![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?logo=linkedin&style=flat-square)](https://www.linkedin.com/in/juanignacio-godoygrando)  
+- [![Email](https://img.shields.io/badge/Email-white?logo=gmail&style=flat-square)](mailto:juangodoygrando@gmail.com)
